@@ -1,0 +1,171 @@
+:root {
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+    --color-dark-blue: hsl(234, 12%, 34%);
+    --color-gray-blue: hsl(229, 6%, 66%);
+    --color-light-gray: hsl(0, 0%, 98%);
+}
+
+::before ::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 1.125rem;
+    margin: 0;
+    background-color: var(--color-light-gray);
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.container {
+    /* width: 85%;
+    max-width: 1200px;
+    margin: 0 auto; */
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2em;
+    padding-right: 2em;
+    position: relative;
+}
+
+.tech {
+    /* padding: 100px 0; */
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+}
+
+.tech-title-one {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-weight: 300;
+}
+
+.tech-title-two {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.tech-subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.card {
+    padding: 1em;
+    background-color: var(--color-light-gray);
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.img-icon {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.img-tag {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.section-subtitle {
+    margin-top: -1em;
+}
+
+.card1 {
+    border-top: 5px solid var(--color-cyan);
+    box-shadow: 4px 4px 6px -6px black;
+    border-radius: 10px 10px 0 0;
+    line-height: 1.8;
+}
+
+.card2 {
+    border-top: 5px solid var(--color-red);
+    box-shadow: 4px 4px 6px -6px black;
+    border-radius: 10px 10px 0 0;
+    line-height: 1.8;
+}
+
+.card3 {
+    border-top: 5px solid var(--color-orange);
+    box-shadow: 4px 4px 6px -6px black;
+    border-radius: 10px 10px 0 0;
+    line-height: 1.8;
+}
+
+.card4 {
+    border-top: 5px solid var(--color-blue);
+    box-shadow: 4px 4px 6px -6px black;
+    border-radius: 10px 10px 0 0;
+    line-height: 1.8;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(min-width:800px) {
+    body {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .card {
+        width: 30%;
+        height: 35vh;
+        display: inline-block;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .card1 {
+        position: absolute;
+        left: 0;
+    }
+    .card2 {
+        position: absolute;
+        top: 0;
+    }
+    .card3 {
+        position: absolute;
+        bottom: -20px;
+    }
+    .card4 {
+        position: absolute;
+        right: 0;
+    }
+    .tech {
+        width: 40%;
+        padding-left: 20em;
+        text-align: center;
+    }
+    .img-icon {
+        margin-bottom: 1em;
+    }
+    /* .section {
+        margin-top: 20em;
+        min-height: 50vh;
+    } */
+}
