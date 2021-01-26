@@ -1,0 +1,136 @@
+:root {
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+    --color-dark-blue: hsl(234, 12%, 34%);
+    --color-gray-blue: hsl(229, 6%, 66%);
+    --color-light-gray: hsl(0, 0%, 98%);
+}
+
+
+/* border-top: 5px solid var(--color-orange);
+box-shadow: 4px 4px 6px -6px black;
+border-radius: 10px 10px 0 0;
+ */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6em;
+    background-color: var(--color-light-gray);
+    /* height: 100vh; */
+}
+
+.container {
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.tech {
+    line-height: 1.9;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.tech-title {
+    line-height: 1.2;
+}
+
+.tech-title-one {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-weight: 300;
+}
+
+.tech-title-two {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.tech-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.card {
+    padding: 1.5em;
+    background-color: var(--color-light-gray);
+    margin: 0 1rem 1rem 1rem;
+    width: 90%;
+    max-width: 400px;
+    height: 40vh;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px 8px 0 0;
+    position: relative;
+}
+
+.card1 {
+    border-top: 5px solid var(--color-cyan);
+}
+
+.card2 {
+    border-top: 5px solid var(--color-red);
+}
+
+.card3 {
+    border-top: 5px solid var(--color-orange);
+}
+
+.card4 {
+    border-top: 5px solid var(--color-blue);
+}
+
+.img-tag {
+    position: absolute;
+    left: 70%;
+    margin-top: 2em;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+@media(min-width:500px) {
+    .card-wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:1100px) {
+    .tech {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .tech-title-one {
+        font-size: 2rem;
+    }
+    .card {
+        width: 400px;
+    }
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: -120px;
+    }
+    .card1 {
+        align-self: center;
+        top: 150px;
+    }
+    .card3 {
+        align-self: flex-end;
+        bottom: 280px;
+    }
+    .card4 {
+        align-self: center;
+        bottom: 380px;
+    }
+}
